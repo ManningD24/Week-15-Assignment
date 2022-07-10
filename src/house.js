@@ -6,7 +6,7 @@ export default class House extends React.Component {
     const rooms = this.props.data.rooms ? this.props.data.rooms.map((room, index) =>
     <li key={index}>
       Name: {room.name} Area: {room.area}
-      <button class="btn btn-danger" onClick={e =>
+      <button class="btn btn-info" onClick={e =>
       this.props.deleteRoom(e, this.props.data, room)
     }>Delete</button>
     </li>)
